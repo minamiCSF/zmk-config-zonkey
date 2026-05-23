@@ -216,9 +216,9 @@
             // | CTRL| WIN | ALT |HENKAN|SPACE|MUHENKAN|         | BS | ENT |                   | DEL |
 
             bindings = <
-&kp CAPSLOCK    &kp GRAVE     &trans        &trans            &trans                                          &trans        &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9  &moC
-&kp TAB         &trans        &trans        &trans            &trans       &trans                &kp JP_EISU  &trans        &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6  &kp ENTER
-&kp LEFT_SHIFT  &trans        &trans        &kp LC(C)         &kp LC(V)    &trans                &kp INT5     &kp NUMBER_0  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp ENTER
+&kp CAPSLOCK    &kp GRAVE     &trans        &trans            &trans                                          &trans        &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9  &kp TILDE
+&kp TAB         &trans        &trans        &trans            &trans       &trans                &kp JP_EISU  &trans        &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
+&kp LEFT_SHIFT  &trans        &trans        &kp LC(C)         &kp LC(V)    &trans                &kp INT5     &kp NUMBER_0  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &trans
 &mt LCTL ESC    &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 INT_HENKAN  &lt 2 SPACE  &lt 1 INT_MUHENKAN                 &kp DEL       &kp LA(ENTER)                                         &kp DEL
             >;
 
@@ -295,10 +295,10 @@
 
         layer_6 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                    &trans      &trans    &trans         &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans      &mkp MB1  &mkp MB3       &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp K_BACK  &trans    &kp K_FORWARD  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans      &trans                                     &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
