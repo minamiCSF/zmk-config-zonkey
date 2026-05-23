@@ -19,10 +19,10 @@ manifest:
       remote: kureyakey
       revision: main
 
-    - name: zmk-rgbled-widget
-      remote: caksoylar
-      revision: main
-      path: modules/zmk-rgbled-widget
+#    - name: zmk-rgbled-widget
+#      remote: caksoylar
+#      revision: main
+#      path: modules/zmk-rgbled-widget
 
   self:
     path: config
