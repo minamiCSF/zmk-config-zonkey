@@ -224,10 +224,10 @@
             // | CTRL| WIN | ALT |HENKAN|SPACE|MUHENKAN|         | BS | ENT |                   | DEL |
 
             bindings = <
-&trans          &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &mo 5                                              &trans        &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9  &kp TILDE
-&kp EQUAL       &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &mo 4             &trans              &kp JP_EISU  &kp PLUS      &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
-&kp LEFT_SHIFT  &trans            &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &trans              &trans       &kp NUMBER_0  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp COLON
-&mt LCTL ESC    &kp LEFT_WIN      &kp LEFT_ALT      &kp INT_HENKAN    &mo 1             &kp INT_MUHENKAN                 &kp DEL       &kp LA(ENTER)                                         &kp DEL
+&trans          &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &mo 5                                                 &trans        &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9  &kp TILDE
+&kp EQUAL       &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &mo 4             &trans                 &kp JP_EISU  &kp PLUS      &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
+&kp LEFT_SHIFT  &trans            &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &trans                 &trans       &kp NUMBER_0  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp COLON
+&mt LCTL ESC    &kp LEFT_WIN      &kp LEFT_ALT      &kp INT_MUHENKAN  &mo 1             &kp INTERNATIONAL_4                 &kp DEL       &kp LA(ENTER)                                         &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp LA(TAB) LA(LS(TAB))>;
