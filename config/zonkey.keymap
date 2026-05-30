@@ -186,11 +186,10 @@
 
             tap-ms = <20>;
         };
-        
+
         scroll_left_right: behavior_sensor_rotate_mouse_wheel_left_right {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-
             bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
 
             tap-ms = <20>;
@@ -225,10 +224,10 @@
             // | CTRL| WIN | ALT |HENKAN|SPACE|MUHENKAN|         | BS | ENT |                   | DEL |
 
             bindings = <
-&kp CAPSLOCK    &kp LS(KP_NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &mo 5                                                &trans        &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9  &kp TILDE
-&kp TAB         &kp LS(NUMBER_4)     &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &mo 4             &trans                &kp JP_EISU  &kp PLUS      &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
-&kp LEFT_SHIFT  &trans               &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &trans                &kp INT5     &kp NUMBER_0  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp COLON
-&mt LCTL ESC    &kp LEFT_WIN         &kp LEFT_ALT      &lt 3 INT_HENKAN  &mo 1             &lt 1 INT_MUHENKAN                 &kp DEL       &kp LA(ENTER)                                         &kp DEL
+&kp LS(CAPSLOCK)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &mo 5                                                &trans        &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9  &kp TILDE
+&kp AT            &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &mo 4             &trans                &kp JP_EISU  &kp PLUS      &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
+&kp LEFT_SHIFT    &trans            &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp INT4              &kp INT5     &kp NUMBER_0  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp COLON
+&mt LCTL ESC      &kp LEFT_WIN      &kp LEFT_ALT      &lt 3 INT_HENKAN  &mo 1             &lt 1 INT_MUHENKAN                 &kp DEL       &kp LA(ENTER)                                         &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp LA(TAB) LA(LS(TAB))>;
@@ -242,10 +241,10 @@
             // | CTRL| WIN | ALT |HENKAN|SPACE|MUHENKAN|         | BS | ENT |                   | DEL |
 
             bindings = <
-&kp N1            &mo2          &kp N3        &kp N4            &mo 6                                      &mo6           &mo7            &kp UP_ARROW    &mo9             &mo0
-&kp LS(CAPSLOCK)  &trans        &kp TAB       &kp LEFT_ALT      &mo 2        &trans                &trans  &mo8           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&kp LEFT_SHIFT    &trans        &trans        &trans            &trans       &trans                &trans  &trans         &trans          &trans          &trans           &trans
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 INT_HENKAN  &lt 4 SPACE  &lt 1 INT_MUHENKAN            &kp BACKSPACE  &kp ENTER                                                &kp DEL
+&kp N1            &mo2          &kp N3        &kp N4            &mo 6                                      &mo6           &mo7            &kp UP_ARROW    &mo9             &kp PAGE_UP
+&kp LS(CAPSLOCK)  &trans        &kp TAB       &kp LEFT_ALT      &mo 2        &trans                &trans  &mo8           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN
+&kp LEFT_SHIFT    &trans        &trans        &trans            &trans       &trans                &trans  &kp HOME       &trans          &kp END         &trans           &trans
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 INT_HENKAN  &lt 4 SPACE  &lt 1 INT_MUHENKAN            &kp BACKSPACE  &kp LC(ENTER)                                                   &kp DEL
             >;
 
             sensor-bindings = <&scroll_left_right>;
